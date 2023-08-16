@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="cardStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="cardBackgroundColor">#fece2f</item>
+        <item name="cardCornerRadius">15dp</item>
+        <item name="elevation">10dp</item>
+    </style>
+
+    <style name="cardTextStyle" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/bungee</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+</resources>

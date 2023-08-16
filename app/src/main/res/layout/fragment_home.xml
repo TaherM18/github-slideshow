@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/bungee"
+            android:text="Hi, User"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/antic"
+            android:text="Continue your Journey"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#00ff00"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardProfile"
+                style="@style/cardStyle">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/imgDelivered"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/inventory_24"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txtDoneCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgDelivered"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/txtProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtDoneCount"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:text="Delivered"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSem"
+                style="@style/cardStyle">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/imgPending"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/pending_actions_24"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txtPendingCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgPending"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/txtSem"
+                        style="@style/cardTextStyle"
+                        android:layout_below="@id/txtPendingCount"
+                        android:text="Pending" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/header_pending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee"
+            android:text="Pending"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout"
+            android:paddingStart="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pending_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header_pending"
+            android:layout_marginTop="376dp"
+            tools:listitem="@layout/pending_order_list_item"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

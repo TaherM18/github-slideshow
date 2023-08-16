@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:background="#fece2f">
+
+                <TextView
+                    android:id="@+id/viewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/bungee"
+                    android:includeFontPadding="false"
+                    android:text="Edit Profile"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!--    Full Name    -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lytFname"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    app:boxStrokeErrorColor="@color/design_default_color_error"
+                    app:errorIconTint="@color/design_default_color_error"
+                    app:startIconDrawable="@drawable/person_24">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtFname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textColor="?attr/colorOnSecondary" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--    Contact    -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lytCont"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact"
+                    app:startIconDrawable="@drawable/call_24"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:boxStrokeErrorColor="@color/design_default_color_error"
+                    app:errorIconTint="@color/design_default_color_error">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtCont"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:textColor="?attr/colorOnSecondary"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--    Address    -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lytStreetAddress"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Street Address"
+                    app:startIconDrawable="@drawable/home_24px"
+                    app:boxStrokeErrorColor="@color/design_default_color_error"
+                    app:errorIconTint="@color/design_default_color_error">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtStreetAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz1234567890, "
+                        android:inputType="text"
+                        android:textColor="?attr/colorOnSecondary"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--        City        -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/bungee"
+                    android:includeFontPadding="false"
+                    android:text="Select City"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spnCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/spinner_background" />
+
+                <!--    Pin Code    -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lytPincode"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pincode"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="6"
+                    app:startIconDrawable="@drawable/ic_baseline_dialpad_24"
+                    app:boxStrokeErrorColor="@color/design_default_color_error"
+                    app:errorIconTint="@color/design_default_color_error">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="123456790"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textColor="?attr/colorOnSecondary"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--    Email    -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lytEmail"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    app:startIconDrawable="@drawable/ic_baseline_email_24"
+                    app:boxStrokeErrorColor="@color/design_default_color_error"
+                    app:errorIconTint="@color/design_default_color_error">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--    Vehicle Number    -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lytVehicleNo"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Vehicle Number"
+                    app:startIconDrawable="@drawable/local_shipping_24"
+                    app:boxStrokeErrorColor="@color/design_default_color_error"
+                    app:errorIconTint="@color/design_default_color_error">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtVehicleNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:text="Null" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--    Licence Number    -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lytLicense"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Driving License"
+                    app:startIconDrawable="@drawable/badge_24"
+                    app:boxStrokeErrorColor="@color/design_default_color_error"
+                    app:errorIconTint="@color/design_default_color_error">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtLicense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:text="Null" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--     Work Time       -->
+                <RadioGroup
+                    android:id="@+id/rdoGrpWorkTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:text="Work Time :"
+                        android:textColor="?attr/colorOnSecondary"
+                        android:textSize="20sp" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rdoPart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:checked="true"
+                        android:fontFamily="@font/bungee"
+                        android:text="Part-Time (4 hours, 4pm to 8pm)"
+                        android:textSize="18sp"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rdoFull"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:text="Full-Time (10 hours, 10 am to 8 pm)"
+                        android:textSize="18sp" />
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#fece2f"
+                    android:fontFamily="@font/bungee"
+                    android:text="Update"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

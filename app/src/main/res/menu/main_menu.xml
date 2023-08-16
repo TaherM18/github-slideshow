@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item-->
+<!--        android:id="@+id/nav_home"-->
+<!--        android:icon="@drawable/home_24px"-->
+<!--        android:title="Home" />-->
+
+    <item
+        android:id="@+id/nav_locality"
+        android:icon="@drawable/share_location_24"
+        android:title="Locality" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/logout_24px"
+        android:title="Logout" />
+
+</menu>

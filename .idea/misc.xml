@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/drawable-v24/delete_24px.xml" value="0.168" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/drawable-v24/edit_24px.xml" value="0.115" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/drawable-v24/home_24px.xml" value="0.115" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/drawable-v24/living_24.xml" value="0.178" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/drawable-v24/local_shipping_24.xml" value="0.178" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/drawable-v24/menu_24px.xml" value="0.168" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/drawable-v24/settings_24px.xml" value="0.168" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/drawable/delivery_dining_24.xml" value="0.178" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/drawable/spinner_background.xml" value="0.168" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_dash.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_dashboard.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_edit_profile.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_home.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_locality.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_my_orders.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_order_details.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_orders.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_profile.xml" value="0.3145833333333333" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_splash.xml" value="0.33" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_test.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_track_order.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/activity_verify_otp.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/fragment_deliveries.xml" value="0.33" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/fragment_delivery_details.xml" value="0.33" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/fragment_home.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/fragment_notification.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/fragment_order_details.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/fragment_profile.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/header.xml" value="0.1546875" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/list_row.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/new_order_list_item.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/pending_list_item.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/pending_order_list_item.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/layout/spinner_background.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/menu/context_menu.xml" value="0.1546875" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/menu/main_menu.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TAHER/AndroidStudioProjects/FIMSDelivery/app/src/main/res/menu/navigation.xml" value="0.33177083333333335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

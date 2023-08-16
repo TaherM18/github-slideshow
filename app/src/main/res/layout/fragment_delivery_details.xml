@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBE2E9"
+    tools:context=".DeliveryDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:background="#fece2f">
+
+                <TextView
+                    android:id="@+id/viewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/bungee"
+                    android:includeFontPadding="false"
+                    android:text="Delivery Details"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardOrderDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/imgOrderIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/description_24px"
+                        app:tint="?attr/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/labelOrderId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/imgOrderIcon"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:paddingBottom="8dp"
+                        android:text="Order: #"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <!--    ORDER ID    -->
+
+                    <TextView
+                        android:id="@+id/txtOrderId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/labelOrderId"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:paddingBottom="8dp"
+                        android:text="0"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <!--    ORDER STATUS    -->
+
+                    <TextView
+                        android:id="@+id/txtOrderStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="#ff033e"
+                        android:fontFamily="@font/antic"
+                        android:includeFontPadding="false"
+                        android:padding="8dp"
+                        android:text="Pending"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!--    ORDER PRICE    -->
+
+                    <TextView
+                        android:id="@+id/txtOrderPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelOrderId"
+                        android:layout_toEndOf="@id/imgOrderIcon"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:paddingBottom="8dp"
+                        android:text="₹ 0.0"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <!--    PAYMENT TYPE    -->
+
+                    <TextView
+                        android:id="@+id/txtPayMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtOrderPrice"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:paddingBottom="8dp"
+                        android:text="COD"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <!--    ORDER DATE TIME    -->
+
+                    <TextView
+                        android:id="@+id/txtOrderDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtOrderPrice"
+                        android:layout_toEndOf="@id/imgOrderIcon"
+                        android:paddingBottom="8dp"
+                        android:fontFamily="@font/antic"
+                        android:text="June 9, 2020, 9:30 am"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!--    ITEM QUANTITY AND NAME    -->
+
+                    <TextView
+                        android:id="@+id/txtItemQtyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtOrderDateTime"
+                        android:layout_toEndOf="@id/imgOrderIcon"
+                        android:fontFamily="@font/antic"
+                        android:text="Loading..."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/customerHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardOrderDetails"
+                android:fontFamily="@font/bungee"
+                android:paddingLeft="16dp"
+                android:text="Customer Details"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="18sp" />
+
+            <!--    CARD NAME   -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customerHeader"
+                android:layout_margin="16dp"
+                android:background="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/imgPerson"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/account_circle_24"
+                        app:tint="#fece2f" />
+
+                    <TextView
+                        android:id="@+id/labelCustomerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/antic"
+                        android:text="Customer Name"
+                        android:textColor="@android:color/tab_indicator_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!--    CUSTOMER NAME   -->
+
+                    <TextView
+                        android:id="@+id/txtCustomerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelCustomerName"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@id/imgPerson"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:paddingTop="12dp"
+                        android:text="Loading..."
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--    CARD PHONE   -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardName"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/imgCall"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/call_24"
+                        app:tint="#fece2f" />
+
+                    <TextView
+                        android:id="@+id/labelCustomerPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/antic"
+                        android:text="Phone"
+                        android:textColor="@android:color/tab_indicator_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!--    CUSTOMER PHONE   -->
+
+                    <TextView
+                        android:id="@+id/txtCustomerPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelCustomerPhone"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@id/imgCall"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:paddingTop="12dp"
+                        android:text="Loading..."
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--    ADDRESS   -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardPhone"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/imgNavigate"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/assistant_direction_filled_24"
+                        app:tint="#fece2f" />
+
+                    <TextView
+                        android:id="@+id/labelCustomerAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/antic"
+                        android:text="Address"
+                        android:textColor="@android:color/tab_indicator_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!--    CUSTOMER ADDRESS   -->
+
+                    <TextView
+                        android:id="@+id/txtCustomerAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelCustomerAddress"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/imgNavigate"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:paddingTop="12dp"
+                        android:text="Loading..."
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/feeHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardAddress"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/bungee"
+                android:paddingLeft="16dp"
+                android:text="Billing Details"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="18sp" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feeHeader"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp">
+
+                    <!--    FEE   -->
+
+                    <TextView
+                        android:id="@+id/labelFee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/antic"
+                        android:paddingBottom="12dp"
+                        android:text="Delivery Fee"
+                        android:textColor="@android:color/tab_indicator_text"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!--        DELIVERY FEE        -->
+
+                    <TextView
+                        android:id="@+id/txtFee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:paddingBottom="12dp"
+                        android:text="₹ 0.0"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/labelTotalAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelFee"
+                        android:fontFamily="@font/antic"
+                        android:text="SubTotal Amount"
+                        android:textColor="@android:color/tab_indicator_text"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!--        SUB TOTAL AMOUNT        -->
+
+                    <TextView
+                        android:id="@+id/txtTotalAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtFee"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:text="₹ 0.0"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/btnDeliveryConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Delivery"
+                android:fontFamily="@font/bungee"
+                android:textColor="@color/black"
+                android:backgroundTint="#fece2f"
+                android:layout_margin="16dp"
+                android:layout_below="@id/cardFee"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
